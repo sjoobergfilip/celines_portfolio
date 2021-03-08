@@ -28,7 +28,7 @@ const About = () => {
     }
 
     return (
-        <main className="relative bg-gray-800 min-h-screen">
+        <main className="relative min-h-screen">
             <LazyHero color="#1D2938" imageSrc={Patter}>
                 <h2 className="text-left text-xl lowercase text-gray-50 slogan">
                     Hello
@@ -37,10 +37,10 @@ const About = () => {
                     My name is {author.name}
                 </h2>
                 <h2 className="text-3xl text-gray-50 slogan text-left">
-                    I'm a frontend developer and UX/UI designer
+                    I'm a Industridesign
                 </h2>
             </LazyHero>
-            <div className="p-10 lg:pt-10 lg:px:72 container mx-auto relative lg:px-56 text-gray-50">
+            <div className="p-10 lg:pt-10 lg:px:72 container mx-auto relative lg:px-56 text-gray-900">
                 <BlockContent
                     blocks={author.body}
                     projectId="qbil2d7s"

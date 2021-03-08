@@ -46,50 +46,18 @@ const SingleProject = () => {
 
     if (!project) return <Loader />;
     return (
-        <main className="bg-gray-800 min-h-screen">
+        <main className="min-h-screen">
             <LazyHero color="#1D2938" imageSrc={project.mainImage.asset.url}>
                 <h1 className="text-gray-50 text-4xl uppercase project-title">
                     {project.title}
                 </h1>
-                <div className="flex justify-center">
-                    <p className="text-gray-50 mr-7 italic project-info ">
-                        {project.projectType}
-                    </p>
-                    <p className="text-gray-50 italic project-info ">
-                        {project.place}
-                    </p>
-                </div>
-                <a
-                    className="text-gray-50 mr-7 underline flex justify-center text-center hover:text-yellow-300"
-                    href={project.link}
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    {project.link}
-                </a>
             </LazyHero>
-            <div className=" lg:px-30 py-12 lg:py-20 px-5 prose max-w-900 m-auto text-gray-50 flex flex-col">
+            <div className=" lg:px-30 py-12 lg:py-20 px-5 prose max-w-900 m-auto text-gray-900 flex flex-col">
                 <BlockContent
                     blocks={project.body}
                     projectId="qbil2d7s"
                     dataset="production"
                 />
-                <a
-                    className="github"
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    {project.github}
-                </a>
-                <a
-                    className="github"
-                    href={project.link}
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    {project.link}
-                </a>
             </div>
         </main>
     );

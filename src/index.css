@@ -3,9 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Truculenta:wght@200&family=Work+Sans:ital,wght@0,300;1,100&display=swap");
-body {
-    background-color: #222e3f;
-}
+
 .heading {
     font-family: "Oswald", sans-serif;
 }
@@ -30,7 +28,7 @@ body {
 }
 
 .nav-link-active {
-    color: white;
+    text-decoration: underline;
 }
 
 .css-hight {
@@ -64,13 +62,27 @@ body {
 }
 
 .filter-active {
-    border: 1px solid #222e3f;
+    text-decoration: underline;
     color: #222e3f;
     background-color: white;
     padding: 10px 20px;
     box-shadow: 0 0;
     border-radius: 10px;
     transition: 0.2s;
+}
+
+.container-article {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+}
+.card-content {
+    width: 400px;
+    height: 400px;
 }
 
 @media screen and (max-width: 500px) {

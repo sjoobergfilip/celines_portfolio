@@ -5,7 +5,7 @@ export default {
     fields: [
         {
             name: "title",
-            type: "string"
+            type: "string",
         },
         {
             name: "slug",
@@ -13,26 +13,26 @@ export default {
             type: "slug",
             options: {
                 source: "title",
-                maxLength: 96
-            }
+                maxLength: 96,
+            },
         },
         {
             name: "date",
-            type: "datetime"
+            type: "datetime",
         },
         {
             name: "place",
-            type: "string"
+            type: "string",
         },
         {
             name: "body",
             title: "Body",
-            type: "blockContent"
+            type: "blockContent",
         },
         {
             name: "shortDescription",
             title: "Short description",
-            type: "text"
+            type: "text",
         },
         {
             name: "projectType",
@@ -45,49 +45,45 @@ export default {
                     { value: "School", title: "School" },
                     { value: "Work", title: "Work" },
                     { value: "Internship", title: "Internship" },
-                    { value: "Design", title: "Design" }
-                ]
-            }
+                    { value: "Design", title: "Design" },
+                ],
+            },
         },
         {
             name: "link",
-            type: "url"
-        },
-        {
-            name: "github",
-            type: "url"
+            type: "url",
         },
         {
             name: "tags",
             type: "array",
             of: [
                 {
-                    type: "string"
-                }
+                    type: "string",
+                },
             ],
             options: {
-                layout: "tags"
-            }
+                layout: "tags",
+            },
         },
         {
             name: "mainImage",
             title: "Main image",
             type: "image",
             options: {
-                hotspot: true
-            }
+                hotspot: true,
+            },
         },
         {
-            name: 'filtertype',
-            title: 'Filter type',
-            type: 'string',
+            name: "filtertype",
+            title: "Filter type",
+            type: "string",
             options: {
                 list: [
-                    { value: "uxDesing", title: "UX-design" },
-                    { value: "frontend", title: "Frontend" },
-                    { value: "illustration", title: "Illustration" },
-                ]
-            }
+                    { value: "wallpaper", title: "Wallpaper Design" },
+                    { value: "industridesign", title: "Industridesign" },
+                    { value: "uxDesign", title: "UX-Design" },
+                ],
+            },
         },
-    ]
+    ],
 };
