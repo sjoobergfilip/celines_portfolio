@@ -1,0 +1,10 @@
+#hide-hover {
+    display: none;
+}
+#show-hover {
+    display: inline;
+}
+
+.github {
+    color: white !important;
+}
