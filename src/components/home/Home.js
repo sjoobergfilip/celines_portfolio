@@ -5,11 +5,11 @@ const Home = () => {
         <main className="container-home lg:px-14">
             <div className="grid lg:grid-cols-2 md:grid-cols-1 w-auto p-12 gap-2 flex justify-center justify-items-center   ">
                 <div className="flex justify-center flex-col">
-                    <h1 className="hero-name text-gray-50 text-6xl">
-                        Frontend developer and UX/UI designer
+                    <h1 className="hero-name text-gray-900 text-6xl">
+                        Industridesigner
                     </h1>
-                    <p className="text-gray-50 my-5 cursive">
-                        My name is Filip and I am a huge sport fan with a big
+                    <p className="text-gray-900 my-5 cursive">
+                        My name is Celine and I am a huge sport fan with a big
                         passion for graphics designs and new technology.
                     </p>
                 </div>
