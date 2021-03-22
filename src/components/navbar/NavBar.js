@@ -5,13 +5,13 @@ import "../../index.css";
 const NavBar = () => {
     return (
         <header>
-            <div className="container mx-auto flex lg:justify-between md:justify-between lg:flex-row md:flex-row flex-col">
+            <div className="mx-auto flex lg:justify-between md:justify-between lg:flex-row md:flex-row flex-col absolute z-40 bg-gray-50 w-screen">
                 <nav className="flex nav-link-font">
                     <NavLink
                         to="/"
                         exact
                         activeClassName="nav-link-active"
-                        className="home-name inflex-flex items-center py-6 px-3 mr-4 text-gray-900 hover:text-gray-5 text-3xl font-bold cursive tracking-widest"
+                        className="home-name inflex-flex items-center py-6 px-10 mr-4 text-gray-900 hover:text-gray-5 text-3xl font-bold cursive tracking-widest"
                     >
                         C
                     </NavLink>
