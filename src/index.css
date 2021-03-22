@@ -79,10 +79,22 @@
 .card-body {
     display: flex;
     justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 .card-content {
-    width: 400px;
-    height: 400px;
+    max-width: 480px;
+    width: 480px;
+    max-height: 480px;
+    height: 480px;
+}
+
+.background-color {
+    background-color: white;
+}
+
+.font-space {
+    letter-spacing: 3px;
 }
 
 @media screen and (max-width: 500px) {

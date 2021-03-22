@@ -48,7 +48,7 @@ const SingleProject = () => {
     return (
         <main className="min-h-screen">
             <LazyHero color="#1D2938" imageSrc={project.mainImage.asset.url}>
-                <h1 className="text-gray-50 text-4xl uppercase project-title">
+                <h1 className="text-gray-50 text-4xl uppercase project-title font-space">
                     {project.title}
                 </h1>
             </LazyHero>
